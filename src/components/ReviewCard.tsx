@@ -76,7 +76,7 @@ export const ReviewCard = ({ review }: ReviewCardProps) => {
                 <span className="text-sm font-medium text-slate-700">
                   {review.rating}/5
                 </span>
-                <Badge className={getSentimentColor(review.sentiment)}>
+                <Badge className={getSentimentColor(review.sentiment)} variant="outline">
                   {review.sentiment}
                 </Badge>
               </div>

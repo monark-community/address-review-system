@@ -179,7 +179,9 @@ const Index = () => {
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-center mb-8">
-            <h2 className="text-3xl font-bold text-slate-900">Recent Reviews</h2>
+            <h2 className="text-3xl font-bold text-slate-900">
+              {activeTab === "recent" ? "Recent Reviews" : "Top Rated Reviews"}
+            </h2>
             <div className="flex space-x-2">
               <Button
                 variant={activeTab === "recent" ? "default" : "outline"}
