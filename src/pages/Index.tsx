@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -50,6 +49,12 @@ const Index = () => {
 
   const topProfiles = [
     {
+      address: "0xabcd...ef12",
+      totalReviews: 31,
+      averageRating: 4.9,
+      tags: ["DAO", "Governance", "Community"]
+    },
+    {
       address: "0x1234...abcd",
       totalReviews: 23,
       averageRating: 4.8,
@@ -57,15 +62,9 @@ const Index = () => {
     },
     {
       address: "0x5678...9012",
-      totalReviews: 15,
-      averageRating: 3.9,
-      tags: ["Frontend", "DeFi", "UI/UX"]
-    },
-    {
-      address: "0xabcd...ef12",
-      totalReviews: 31,
+      totalReviews: 18,
       averageRating: 4.9,
-      tags: ["DAO", "Governance", "Community"]
+      tags: ["Frontend", "DeFi", "UI/UX"]
     }
   ];
 
